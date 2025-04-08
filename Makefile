@@ -24,7 +24,7 @@ up: ## Поднятие контейнеров
 	${DOCKER_COMPOSE}  up --build -d
 
 down: ## Остановка контейнеров
-	docker-compose   --env-file .env down --remove-orphans
+	${DOCKER_COMPOSE}  down --remove-orphans
 
 
 .PHONY: restart  up down
