@@ -3,4 +3,6 @@
 
 #### Для запуска:
 
-``` docker-compose up --build -d ```
+``` make up ```
+
+### После запуска приложение, будет доступнно  на [localhost:8080](http://localhost:8080):
