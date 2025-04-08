@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      dockerfile: docker/Dockerfile
+      context: .
+    volumes:
+      - .:/var/www/app
+    environment:
+      COMPOSER_MEMORY_LIMIT: -1
+      COMPOSER_ALLOW_SUPERUSER: 1
+    ports:
+      - 8080:8080
+    command: php -S 0.0.0.0:8080 -t ./public
+
+
+   
